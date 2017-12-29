@@ -6,13 +6,25 @@
     android:layout_height="match_parent"
     tools:context="net.theprogressapp.progressproject9.MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/somethingEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/clickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickFunction"
+        android:text="Button"
+        android:layout_marginTop="52dp"
+        app:layout_constraintTop_toBottomOf="@+id/somethingEditText"
+        android:layout_marginLeft="148dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 </android.support.constraint.ConstraintLayout>
