@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText somethingEditText = (EditText) findViewById(R.id.somethingEditText);
 
-        Toast.makeText(MainActivity.this, "You typed in " + somethingEditText.getText().toString(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "You typed in this word " + somethingEditText.getText().toString(), Toast.LENGTH_SHORT).show();
 
     }
 
